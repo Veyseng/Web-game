@@ -151,7 +151,7 @@
                     <span>NEWS</span>
                 </div>
                 <div>
-                    <a href="" class="color-seeall">SEE ALL</a>
+                    <a href="">SEE ALL</a>
                 </div>
             </div>
             <div class="game">
