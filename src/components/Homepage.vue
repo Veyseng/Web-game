@@ -1,6 +1,6 @@
 <template>
 <div>
-    <Header msg="LOG IN" selectedHeader="selected-header" Hightlight="highlight_line"/>
+    <Header msg="LOG IN" selected="selected-header" Hightlight="highlight_line"/>
     <main>
         <section>
             <span>TRENDING NOW</span>
@@ -73,9 +73,9 @@
                         <li><button class="btn btn-danger">BUY NOW</button></li>
                     </ul>
                     <ul class="rating">
-                        <li><i class="far fa-star"></i></li>
-                        <li><i class="far fa-star"></i></li>
-                        <li><i class="far fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
                         <li><i class="far fa-star"></i></li>
                         <li><i class="far fa-star"></i></li>
                     </ul>
@@ -93,8 +93,8 @@
                         <li><button class="btn btn-danger">BUY NOW</button></li>
                     </ul>
                     <ul class="rating">
-                        <li><i class="far fa-star"></i></li>
-                        <li><i class="far fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
                         <li><i class="far fa-star"></i></li>
                         <li><i class="far fa-star"></i></li>
                         <li><i class="far fa-star"></i></li>
@@ -133,10 +133,10 @@
                         <li><button class="btn btn-danger">BUY NOW</button></li>
                     </ul>
                     <ul class="rating">
-                        <li><i class="far fa-star "></i></li>
-                        <li><i class="far fa-star "></i></li>
-                        <li><i class="far fa-star "></i></li>
-                        <li><i class="far fa-star "></i></li>
+                        <li><i class="fas fa-star "></i></li>
+                        <li><i class="fas fa-star "></i></li>
+                        <li><i class="fas fa-star "></i></li>
+                        <li><i class="fas fa-star "></i></li>
                         <li><i class="far fa-star "></i></li>
                     </ul>
                 </div>
@@ -238,6 +238,7 @@ export default {
                 if(text==dataPage){
                     element.style.transition="all 1s ease";
                     element.style.transform="TranslateY(-15px)"
+                    
                 }
             })
             News.forEach(element=>{
@@ -256,6 +257,7 @@ export default {
                 const dataPage=element.getAttribute("data-page")
                 if(text==dataPage){
                     element.style.transition="all 1s ease";
+
                     element.style.transform="none"
                 }
                 

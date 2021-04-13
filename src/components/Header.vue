@@ -4,9 +4,9 @@
             <ul>
                 <!-- logo -->
                 <li><img src="../assets/images/Anachak_logo.svg" alt=""></li>
-                <li><a href="./Homepage.vue" :class="selectedHeader">HOME</a></li>
+                <li><a href="./Homepage.vue" :class="selectedHome">HOME</a></li>
                 <li><a href="">ABOUT US</a></li>
-                <li><a href="">STORE</a></li>
+                <li><a href="" :class="selectedStore">STORE</a></li>
                 <li><a href="">NEWS</a></li>
                 <li><a href="">FAQ</a></li>
                 <div class="line">
@@ -34,7 +34,8 @@ export default {
     },
     props:{
         msg:String,
-        selectedHeader:String,
+        selectedHome:String,
+        selectedStore:String,
         Hightlight:String,
     },
 }

@@ -22,6 +22,7 @@
                 <div><span>ADD GAME</span></div>
             </div>
             <div class="line"></div>
+            <form action="">
             <div >
                 <ul class="addGame">
                     <li>
@@ -108,10 +109,12 @@
                         </div>
                     </li>
                 </ul>
+                
             </div>
             <div class="createGame">
                 <button class="btn btn-danger ">CREATE GAME <i class="fas fa-plus"></i></button>
             </div>
+            </form>
         </section>
         <section>
             <div>
